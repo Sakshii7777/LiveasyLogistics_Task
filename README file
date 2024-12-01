@@ -1,0 +1,40 @@
+# Phone Authentication with OTP (Firebase + Flutter)
+
+This project demonstrates user authentication using a phone number in Flutter. The user enters their 10-digit phone number, receives an OTP (One-Time Password), and it is automatically verified using Firebase Authentication.
+
+## Features
+
+- Phone number authentication using Firebase.
+- OTP sent to the user's phone number.
+- Automatic verification of OTP.
+- Responsive UI for both phone number input and OTP verification.
+
+## Requirements
+
+- Flutter (latest stable version).
+- Firebase account and Firebase project setup.
+- Firebase Authentication enabled in the Firebase Console.
+- Google Services JSON for Android and/or GoogleService-Info.plist for iOS.
+
+## Setup
+
+### 1. Firebase Setup
+
+- Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+- Enable Phone Authentication in the Firebase Console under **Authentication** > **Sign-in method** > **Phone**.
+- Download `google-services.json` for Android or `GoogleService-Info.plist` for iOS and add it to your project.
+
+### 2. Flutter Setup
+
+Make sure you have Flutter installed. You can follow the official Flutter installation guide [here](https://flutter.dev/docs/get-started/install).
+
+### 3. Dependencies
+
+Add the following dependencies to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
